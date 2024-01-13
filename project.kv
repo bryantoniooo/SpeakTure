@@ -1,0 +1,26 @@
+# project.kv
+
+<SpeakTureApp>:
+    orientation: 'vertical'
+    spacing: 10
+    padding: 10
+
+    Label:
+        text: 'SPEAKTURE'
+        font_size: 20
+        bold: True
+        size_hint_y: None
+        height: 50
+
+    KivyImage:
+        size: (300, 200)
+
+    BoxLayout:
+        spacing: 10
+        Button:
+            text: 'Capture'
+            on_press: app.open_camera()
+
+        Button:
+            text: 'Browse'
+            on_press: app.browse_image()
