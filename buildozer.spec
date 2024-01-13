@@ -4,10 +4,10 @@
 title = SpeakTure
 
 # (str) Package name
-package.name = com.cpen111.speakture
+package.name = myapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.cpen111
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
