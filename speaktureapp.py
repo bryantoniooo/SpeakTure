@@ -1,22 +1,19 @@
 import cv2
 import os
 import threading
-import kivy
 from kivy.app import App
+from kivy.lang import Builder  # Add this import
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 from kivy.uix.image import Image as KivyImage
 from kivy.uix.label import Label
 from kivy.uix.filechooser import FileChooserListView
-from kivy.clock import Clock
+from kivy.uix.popup import Popup  # Add this import
 from PIL import Image as PILImage
 import pytesseract
 from gtts import gTTS
 
-class SpeakTureApp(App):
-    def build(self):
-        Builder.load_file('project.kv')
-        return self.root
+Builder.load_file('project.kv')  # Load the project.kv file
 
 class SpeakTureApp(App):
     def build(self):
